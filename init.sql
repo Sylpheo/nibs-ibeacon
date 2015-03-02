@@ -107,10 +107,10 @@ INSERT INTO salesforce.product2 (id, name, description, image__c) VALUES
 INSERT INTO salesforce.hotel__c (id, name, location__latitude__s, location__longitude__s) VALUES
     (1, 'Marquis', 37.785143, -122.403405),
     (2, 'Mercure', 37.786164, -122.410137),
-    (3, 'Hyatt', 37.794157, -122.396311)
+    (3, 'Hyatt', 37.794157, -122.396311);
 
 INSERT INTO salesforce.store__c (id, name, location__latitude__s, location__longitude__s) VALUES
     (1, 'Marquis', 37.785143, -122.403405),
     (2, 'Hilton', 37.786164, -122.410137),
-    (3, 'Hyatt', 37.794157, -122.396311)
+    (3, 'Hyatt', 37.794157, -122.396311);
 
