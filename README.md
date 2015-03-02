@@ -2,6 +2,7 @@
 
 This README outlines the details of collaborating on this application.
 A short introduction of this app could easily go here.
+It's based on [Nibs](http://heroku.github.io/nibs/) and it was modified to communicate with iBeacon. 
 
 ## Prerequisites
 
@@ -19,9 +20,10 @@ You will need the following things properly installed on your computer.
 
 ## Running / Development
 
+* Make a note of the UUID, Minor, Major and the identifier of your iBeacon and change it into the client/js/app.js file.
 * Change into the client directory
 * `python -m SimpleHTTPServer 8000`
-* Visit your app at [http://localhost:8000](http://localhost:8000). 
+* Visit your app at [http://localhost:8000](http://localhost:8000).
 
 ## Building the Cordova Shell
 
@@ -64,5 +66,5 @@ You will need the following things properly installed on your computer.
 * Android users: `cordova build android`
 * iOS users: `cordova build ios`
 
-Install the built app in a mobile device, start it and enjoy !
-Make sure your iBeacon is turned on !
+Install the built app in a mobile device, start it and enjoy!
+Make sure your iBeacon is turned on!
