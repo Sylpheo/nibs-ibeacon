@@ -85,17 +85,14 @@ CREATE TABLE IF NOT EXISTS salesforce.store__c (
   );
 
 INSERT INTO salesforce.campaign (id, name, description, image__c, type, status) VALUES
-    (1, 'DGJ Organics / Argan Oil Shampoo / 250ml', 'Our Argan Oil Shampoo will strengthen, repair, nourish and reduce frizz. This specially formulated Shampoo with Moroccan Organic Argan Oil and rich in vitamin E, is designed for coloured, over-processed or unmanageable hair damaged by heat styling. The nourishing ingredients and gentle formula cleanse away daily impurities, whilst restoring moisture and repairing hair from within.', 'img/shampoo.jpg', 'Offer', 'In Progress'),
-    (2, 'Heal Your Skin Lotion', 'Dry skin can be the result of genetics, environmental hazards like harsh soaps or extreme weather conditions.  This lotion was created to fix dry, itchy skin and eczema and do just what it says: heal your skin!
-This formula combines essential oils and flower extracts, known for their healing qualities, with natural, Paraben-Free lotion.  The result is a therapeutic blend that nourishes, repairs and heals. This has become my daily go to lotion!  The whole family uses it and no more itchy dry skin.
-My son''s eczema is finally resolving! There are no harmful chemicals and the scent is amazing!', 'img/lotion_massage.jpg', 'Offer', 'In Progress'),
-    (3, 'Lust & Laune Rosé 2015
-three bottles pack', 'As the name already implies, our Lust & Laune Rosé offers pure pleasure. A cuvée consisting mainly of Zweigelt and Pinot Noir, it is widely versatile either as an accompaniment for snacks or as a liquid complement to relaxed discussions.
-
-*Clear, lustrous pink-rosé, fine fragrance of fresh red fruits,  highlighted by subtle spicy nuances, in equal measure fresh  and fruity on the palate, altogether very well-rounded, lively  and exhilarating, offering immense drinking pleasure.
-
-*Excellent with snacks, but also goes superbly with salmon  and all that can be conjured up from it.', 'img/zull-wine-design.jpg', 'Offer', 'In Progress');
-    
+    (1, '$10 Off Case of Chocolate Stout', 'Get $10.00 off of a case of Chocolate Stout that is sure to leave you satisfied.', 'https://s3-us-west-2.amazonaws.com/sfdc-nibs-demo/chocolate_camarao.jpg', 'Offer', 'In Progress'),
+    (2, '10% of EcoTruffles', 'Twice as much Eco!', 'http://s3-us-west-1.amazonaws.com/sfdc-demo/nibs/truffles.jpg', 'Offer', 'In Progress'),
+    (3, '10% off EcoChocolate: Fair Trade and Organic Chocolates', '0% off chocolate that makes you feel as good as they tastes! Fair Trade and Organic chocolates assortment...', 'https://s3-us-west-1.amazonaws.com/sfdc-demo/nibs/ritual2.jpg', 'Offer', 'In Progress'),
+    (4, 'Buy 2 Get 1 Free: Dandelion Chocolate for Connoisseurs', 'Purists, Foodies and Afficionados: Buy 2 Bars Get 1 Free', 'https://s3-us-west-1.amazonaws.com/sfdc-demo/Purists+Campaign+.png', 'Offer', 'In Progress'),
+    (5, 'Buy 4 Get 6: Best of San Francisco', 'Buy 4, get 6 of of the city''s finest native chocolatiers, old and new: Tcho, Dandelion, Recchiutti, Ghirardelli, Sharffenburger, Guittard.', 'https://s3-us-west-1.amazonaws.com/sfdc-demo/Best+of+San+Francisco+Campaign.png', 'Offer', 'In Progress'),
+    (6, 'Free Shipping on Truffles for Mother''s Day', 'Free Shipping for all Mother’s Day gifts places >72 hours before Sunday, May 11', 'https://s3-us-west-1.amazonaws.com/sfdc-demo/nibs/soma1.jpg', 'Offer', 'In Progress'),
+    (7, 'Free Shipping on Wine & Chocolate Pairings', 'Free Shipping on all wine, champagne, and chocolate pairings.', 'https://s3-us-west-1.amazonaws.com/sfdc-demo/nibs/dandelion2.jpg', 'Offer', 'In Progress'),
+    (8, 'Nuts about nuts: 30% off mixed chocolate covered nuts', 'Are you nuts for nuts?', 'http://s3-us-west-1.amazonaws.com/sfdc-demo/nibs/nuts.jpg', 'Offer', 'In Progress');
 
 INSERT INTO salesforce.product2 (id, name, description, image__c) VALUES
     (1, 'Caramelized Almonds', 'Addictive treats from the popular new boutique chocolatier in San Francisco''s Mission District.', 'https://s3-us-west-1.amazonaws.com/sfdc-demo/nibs/feve1.jpg'),
@@ -116,3 +113,4 @@ INSERT INTO salesforce.store__c (id, name, location__latitude__s, location__long
     (1, 'Marquis', 37.785143, -122.403405),
     (2, 'Hilton', 37.786164, -122.410137),
     (3, 'Hyatt', 37.794157, -122.396311)
+
