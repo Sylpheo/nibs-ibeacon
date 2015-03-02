@@ -20,7 +20,7 @@ You will need the following things properly installed on your computer.
 
 ## Running / Development
 
-* Make a note of the UUID, Minor, Major and the identifier of your iBeacon and change it into the client/js/app.js file.
+* Make a note of the UUID, Minor, Major and the identifier of your iBeacon and change it into the `client/js/app.js` file.
 * Change into the client directory
 * `python -m SimpleHTTPServer 8000`
 * Visit your app at [http://localhost:8000](http://localhost:8000).
