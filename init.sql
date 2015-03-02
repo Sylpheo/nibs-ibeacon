@@ -68,14 +68,6 @@ CREATE TABLE IF NOT EXISTS salesforce.product2 (
     publishdate__c  DATE
   );
 
-DROP TABLE IF EXISTS salesforce.hotel__c;
-CREATE TABLE IF NOT EXISTS salesforce.hotel__c (
-    id                      BIGSERIAL PRIMARY KEY,
-    name                    TEXT,
-    location__latitude__s   TEXT,
-    location__longitude__s  TEXT
-  );
-
 DROP TABLE IF EXISTS salesforce.store__c;
 CREATE TABLE IF NOT EXISTS salesforce.store__c (
     id                      BIGSERIAL PRIMARY KEY,
@@ -103,11 +95,6 @@ INSERT INTO salesforce.product2 (id, name, description, image__c) VALUES
     (6, 'Patric IN-NIB-ITABLE', 'For the Nibs lovers in your life: a bar of 72% cacao, dark, sweet and strewn with crunchy nibs.', 'https://s3-us-west-1.amazonaws.com/sfdc-demo/nibs/patric2.jpg'),
     (7, 'Patric Limited Edition', 'Salt and chocolate meet in a single bar. For sophisticated palettes.', 'https://s3-us-west-1.amazonaws.com/sfdc-demo/nibs/patric3.jpg'),
     (8, 'Patric Mizzou Crunch', 'Some love smooth, some love crunch. This is a crunch! Lively on the palette.', 'https://s3-us-west-1.amazonaws.com/sfdc-demo/nibs/patric1.jpg');
-
-INSERT INTO salesforce.hotel__c (id, name, location__latitude__s, location__longitude__s) VALUES
-    (1, 'Marquis', 37.785143, -122.403405),
-    (2, 'Mercure', 37.786164, -122.410137),
-    (3, 'Hyatt', 37.794157, -122.396311);
 
 INSERT INTO salesforce.store__c (id, name, location__latitude__s, location__longitude__s) VALUES
     (1, 'Marquis', 37.785143, -122.403405),
