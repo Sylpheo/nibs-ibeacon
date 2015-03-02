@@ -1,16 +1,16 @@
-angular.module('nibs_ibeacon.hotel-locator', [])
+angular.module('nibs_ibeacon.store-locator', [])
 
     // Routes
     .config(function ($stateProvider) {
 
         $stateProvider
 
-            .state('app.hotel-locator', {
-                url: "/hotel-locator",
+            .state('app.store-locator', {
+                url: "/store-locator",
                 views: {
                     'menuContent' :{
-                        templateUrl: "templates/hotel-locator.html",
-                        controller: "HotelLocatorCtrl"
+                        templateUrl: "templates/store-locator.html",
+                        controller: "StoreLocatorCtrl"
                     }
                 }
             });
@@ -18,35 +18,35 @@ angular.module('nibs_ibeacon.hotel-locator', [])
     })
 
     // Services
-    .factory('Hotel', function ($http, $rootScope) {
+    .factory('Store', function ($http, $rootScope) {
         return {
             all: function() {
-                return $http.get($rootScope.server.url + '/hotels');
+                return $http.get($rootScope.server.url + '/stores');
             }
         };
     })
 
     //Controllers
-    .controller('HotelLocatorCtrl', function ($scope, Hotel) {
+    .controller('StoreLocatorCtrl', function ($scope, Store) {
 
         var map,
             currentPosMarker,
 
             icon = L.icon({
-                iconUrl: 'img/icone-hotel.png',
-                //shadowUrl: 'img/leaf-shadow.png',
+                iconUrl: 'img/leaf-green.png',
+                shadowUrl: 'img/leaf-shadow.png',
                 iconSize:     [38, 44], // size of the icon
-                //shadowSize:   [50, 64], // size of the shadow
+                shadowSize:   [50, 64], // size of the shadow
                 iconAnchor:   [19, 44], // point of the icon which will correspond to marker's location
-                //shadowAnchor: [4, 62],  // the same for the shadow
+                shadowAnchor: [4, 62],  // the same for the shadow
                 popupAnchor:  [0, 0] // point from which the popup should open relative to the iconAnchor
             });
 
-        Hotel.all().success(function(hotels) {
-            $scope.hotels = hotels;
-            for (var i=0; i<hotels.length; i++) {
-                var hotel = hotels[i];
-                L.marker([hotel.latitude, hotel.longitude], {icon: icon}).addTo(map);
+        Store.all().success(function(stores) {
+            $scope.stores = stores;
+            for (var i=0; i<stores.length; i++) {
+                var store = stores[i];
+                L.marker([store.latitude, store.longitude], {icon: icon}).addTo(map);
             }
         });
 

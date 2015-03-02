@@ -12,7 +12,7 @@ var express = require('express'),
     users = require('./server/users'),
 //    cases = require('./server/cases'),
     wallet = require('./server/wallet'),
-    hotels = require('./server/hotels'),
+    stores = require('./server/stores'),
     auth = require('./server/auth'),
     facebook = require('./server/facebook'),
     s3signing = require('./server/s3signing'),
@@ -48,7 +48,7 @@ app.put('/users/me', auth.validateToken, users.updateProfile);
 
 app.get('/offers', auth.validateToken, offers.getAll);
 app.get('/offers/:id', offers.getById);
-app.get('/hotels', hotels.findAll);
+app.get('/stores', stores.findAll);
 
 app.get('/wallet', auth.validateToken, wallet.getItems);
 app.post('/wallet', auth.validateToken, wallet.addItem);

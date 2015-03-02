@@ -1,4 +1,4 @@
-var app = angular.module('nibs_ibeacon', ['ionic', 'openfb', 'nibs_ibeacon.config', 'nibs_ibeacon.profile', 'nibs_ibeacon.auth', 'nibs_ibeacon.offer', 'nibs_ibeacon.hotel-locator', 'nibs_ibeacon.settings', 'nibs_ibeacon.case'])
+var app = angular.module('nibs_ibeacon', ['ionic', 'openfb', 'nibs_ibeacon.config', 'nibs_ibeacon.profile', 'nibs_ibeacon.auth', 'nibs_ibeacon.offer', 'nibs_ibeacon.store-locator', 'nibs_ibeacon.settings', 'nibs_ibeacon.case'])
 
     .run(function ($window, $location, $rootScope, $state, $ionicPlatform, $http, OpenFB, FB_APP_ID, SERVER_URL) {
          
@@ -65,14 +65,14 @@ var app = angular.module('nibs_ibeacon', ['ionic', 'openfb', 'nibs_ibeacon.confi
                                 if(pluginResult.state === "CLRegionStateInside"){
                              
                                     if (pluginResult.region.major === 1627) {
-                                        window.plugin.notification.local.add({ message: 'Welcome to your hotel !',
+                                        window.plugin.notification.local.add({ message: 'Welcome to your store !',
                                                                          badge           : 0,
                                                                          id             : 1,
                                                                          json:       JSON.stringify({ type: 1627 })
                                         });
                                     }
                                     if (pluginResult.region.major === 1629 && $rootScope.user != null) {
-                                        window.plugin.notification.local.add({ message: 'Welcome to your hotel room, You\'ve got ' + $rootScope.user.points + ' points. Discover our fidelity offers !',
+                                        window.plugin.notification.local.add({ message: 'You\'ve got ' + $rootScope.user.points + ' points. Discover our fidelity offers !',
                                                                   badge           : 0,
                                                                   id             : 1,
                                                                   json:       JSON.stringify({ type: 1629 })
