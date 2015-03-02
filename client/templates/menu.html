@@ -1,0 +1,71 @@
+<ion-side-menus>
+
+    <ion-side-menu-content>
+        <ion-nav-bar class="bar bar-header nav-title-slide-ios7 bar-status{{user.status || 1}}">
+            <ion-nav-back-button class="button-clear">
+                <i class="icon ion-ios7-arrow-back"></i>
+            </ion-nav-back-button>
+        </ion-nav-bar>
+        <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
+    </ion-side-menu-content>
+
+    <ion-side-menu side="left" style="padding:12px;">
+
+        <ion-content>
+
+            <h1>Hello {{user.firstname}}!</h1>
+
+            <ion-list class="top-list">
+
+                <ion-item nav-clear menu-close ui-sref="app.offers" class="item-icon-left">
+                    <i class="icon ion-pricetags" class="item-icon-left"></i>
+                    Special Offers
+                    <span class="badge">2</span>
+                </ion-item>
+
+                <ion-item nav-clear menu-close ui-sref="app.wallet" class="item-icon-left">
+                    <i class="icon ion-ios7-bookmarks"></i>
+                    My Wallet
+                </ion-item>
+
+                <ion-item nav-clear menu-close ui-sref="app.activity" class="item-icon-left">
+                    <i class="icon ion-ios7-checkmark"></i>
+                    Recent Activity
+                </ion-item>
+
+                <ion-item nav-clear menu-close ui-sref="app.hotel-locator" class="item-icon-left">
+                    <i class="icon ion-ios7-location"></i>
+                    Hotel Locator
+                </ion-item>
+
+            </ion-list>
+
+            <ion-list class="bottom-list">
+                
+                <ion-item nav-clear menu-close ui-sref="app.profile" class="item-icon-left">
+                    <i class="icon ion-ios7-person"></i>
+                    My Profile
+                </ion-item>
+
+                <ion-item nav-clear menu-close ui-sref="app.help" class="item-icon-left">
+                    <i class="icon ion-ios7-help"></i>
+                    Levels
+                </ion-item>
+
+                <!--<ion-item nav-clear menu-close ui-sref="app.logout" class="item-icon-left">-->
+                    <!--<i class="icon ion-log-out"></i>-->
+                    <!--Logout-->
+                <!--</ion-item>-->
+
+                <ion-item nav-clear menu-close ui-sref="app.settings" class="item-icon-left">
+                    <i class="icon ion-ios7-gear"></i>
+                    Settings
+                </ion-item>
+
+            </ion-list>
+
+        </ion-content>
+
+    </ion-side-menu>
+
+</ion-side-menus>

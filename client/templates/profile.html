@@ -1,0 +1,95 @@
+<ion-view title="" hide-back-button="true" class="profile">
+
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+        <a class="button button-clear" href="#/app/edit-profile">Edit</a>
+    </ion-nav-buttons>
+
+    <ion-content padding="false" scroll="false">
+
+        <div ng-if="user.id">
+            <div class="header status{{user.status}}-bg">
+                <img class="avatar" ng-src="{{user.pictureurl || 'img/avatar.jpg'}}" ng-click="popupDialog()"/>
+                <h2>{{user.firstname}} {{user.lastname}}</h2>
+                <h3>Member since {{user.createddate | date:'longDate'}}</h3>
+            </div>
+
+            <div style="padding: 8px 16px;" class="status{{user.status}}">
+
+                <div class="profile-status">
+                    <div>
+                        <div class="profile-level">{{statusLabel}} Member</div>
+                        <div class="profile-points"><img ng-src="css/img/icon-points{{user.status}}.svg" style="height: 1.2rem;width: 1.2rem;"/> {{user.points || 0}} Nibs</div>
+                        <p>{{statusDescription}}</p>
+                    </div>
+                    <div class="icon-status icon-status{{user.status}}"></div>
+                </div>
+
+                <div class="status-bar">
+                    <div class="forastero">
+                        <p>Forastero</p>
+                        <p>0-5000 Nibs</p>
+                    </div>
+                    <div class="trinitario">
+                        <p>Trinitario</p>
+                        <p>&gt;5000 Nibs</p>
+                    </div>
+                    <div class="Criollo">
+                        <p>Criollo</p>
+                        <p>&gt;10000 Nibs</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!--
+        <div ng-if="user.id">
+            <div class="header status{{user.status}}-bg">
+                <img class="avatar" ng-src="{{user.pictureurl || 'img/avatar.jpg'}}" ng-click="popupDialog()"/>
+                <h2>{{user.firstname}} {{user.lastname}}</h2>
+                <h3>Reward points ({{user.points || 0}} pts)</h3>
+            </div>
+            
+            <img class="full-image" style="margin-top: -8px" ng-src="img/sofitel-london-banner.jpg">
+
+            <div style="padding: 5px 20px" class="status{{user.status}}">
+
+                <div class="profile-status" style="text-align: center;">
+                    <div>
+                        <div class="profile-level">Sofitel London St James</div>
+                        <div class="profile-points" style="font-size: 0.6rem; padding-bottom: 10px">6 Waterloo Place / SW1Y 4AN LONDON / UNITED KINGDOM</div>
+                        <div style="border-top: 1px solid; border-bottom: 1px solid; padding: 10px 0">Room Number: <span class="profile-level">216</span></div>
+                        
+                        <div style="clear:both; margin-left: auto;margin-right: auto; height: 115px;">
+                            <div style="width: 50%; float:left; height: 62px; padding: 31px"><p>Code Pin:<p class="profile-level" style="top: 0;">025489</p></p></div>
+                            <div style="width: 50%; float:right;"> <img class="full-image" style="display: inline-block;" ng-src="img/qr_code.jpg"></div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!--<div class="status-bar">
+                    <div class="forastero">
+                        <p>Forastero</p>
+                        <p>0-5000 Nibs</p>
+                    </div>
+                    <div class="trinitario">
+                        <p>Trinitario</p>
+                        <p>&gt;5000 Nibs</p>
+                    </div>
+                    <div class="Criollo">
+                        <p>Criollo</p>
+                        <p>&gt;10000 Nibs</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        -->
+
+    </ion-content>
+
+</ion-view>
