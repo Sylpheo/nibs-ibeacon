@@ -24,6 +24,7 @@ You will need the following things properly installed on your computer.
 * Change into the client directory
 * `python -m SimpleHTTPServer 8000`
 * Visit your app at [http://localhost:8000](http://localhost:8000).
+* The database used is on an online heroku application. It is configured on the `client/js/config.js` file. You can use your own database or use a local database.
 
 ## Building the Cordova Shell
 
@@ -68,3 +69,6 @@ You will need the following things properly installed on your computer.
 
 Install the built app in a mobile device, start it and enjoy!
 Make sure your iBeacon is turned on!
+
+#### Usage:
+This application manages two iBeacons: one send a notification "Welcome to your store !" when you are connected or not; the second send the notification "You've got 1000 points. Discover our fidelity offers !" only when you are connected.
