@@ -1,6 +1,6 @@
 # Nibs & iBeacon
 
-![iBeacon](ibeacon-logo.svg) ![Nibs](logo.png)
+![iBeacon](logo_ibeacon.png) ![Nibs](logo_nibs.png)
 
 This README outlines the details of collaborating on this application.
 A short introduction of this app could easily go here.
