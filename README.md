@@ -1,8 +1,13 @@
 # Nibs & iBeacon
 
+![iBeacon](ibeacon-logo.svg) ![Nibs](logo.png)
+
 This README outlines the details of collaborating on this application.
 A short introduction of this app could easily go here.
 It's based on [Nibs](http://heroku.github.io/nibs/) and it was modified to communicate with iBeacon. 
+
+This project is an example of what you can do with your ibeacon : geolocate your users in an enclosed space and send them messages automatically.
+This application manages two iBeacons: one send a notification "Welcome to your store !" when you are connected or not; the second send the notification "You've got 1000 points. Discover our fidelity offers !" only when you are connected.
 
 ## Prerequisites
 
@@ -69,6 +74,3 @@ You will need the following things properly installed on your computer.
 
 Install the built app in a mobile device, start it and enjoy!
 Make sure your iBeacon is turned on!
-
-#### Usage:
-This application manages two iBeacons: one send a notification "Welcome to your store !" when you are connected or not; the second send the notification "You've got 1000 points. Discover our fidelity offers !" only when you are connected.
