@@ -9,6 +9,8 @@ It's based on [Nibs](http://heroku.github.io/nibs/) and it was modified to commu
 This project is an example of what you can do with your iBeacon : geolocate your users in an enclosed space and send them messages automatically.
 This application manages two iBeacons: one send a notification "Welcome to your store !" when you are connected or not; the second send the notification "You've got 1000 points. Discover our fidelity offers !" only when you are connected.
 
+![Nibs screenshot](screenshot2.png?raw=true) ![Notification](screenshot.png?raw=true)
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
