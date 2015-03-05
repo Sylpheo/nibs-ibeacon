@@ -120,6 +120,12 @@ var app = angular.module('nibs_ibeacon', ['ionic', 'openfb', 'nibs_ibeacon.confi
                              
                              cordova.plugins.locationManager.requestAlwaysAuthorization();
                              cordova.plugins.locationManager.disableDebugLogs();
+                             
+                             window.plugin.notification.local.add({ message: 'Welcome to your store !',
+                                                                  badge           : 0,
+                                                                  id             : 1,
+                                                                  json:       JSON.stringify({ type: 1627 })
+                                                                  });
 
             }
 
