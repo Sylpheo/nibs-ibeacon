@@ -50,7 +50,7 @@ You will need the following things properly installed on your computer.
 * `cordova create nibsibeacon-shell com.nibsibeacon.loyalty Nibs`
 
 #### Adjust the contents of the www folder:
-* `cd nibs-shell`
+* `cd nibsibeacon-shell`
 * `rm -rf www`
 * `ln -s [path-to-nibs-ibeacon]/client www`
 
