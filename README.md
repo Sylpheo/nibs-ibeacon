@@ -1,5 +1,7 @@
 # Nibs & iBeacon
 
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+
 ![iBeacon](logo_ibeacon.png?raw=true) ![Nibs](logo_nibs.png?raw=true)
 
 This README outlines the details of collaborating on this application.
