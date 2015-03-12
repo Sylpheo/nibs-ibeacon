@@ -1,6 +1,6 @@
 angular.module('nibs_ibeacon.config', [])
 
-    .constant('SERVER_URL', 'https://sylpheo-nibs-ibeacon.herokuapp.com')
+    .constant('SERVER_URL', null)
 
     .constant('FB_APP_ID','916692588342928')
 
