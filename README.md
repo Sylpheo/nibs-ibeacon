@@ -5,7 +5,6 @@
 ![iBeacon](logo_ibeacon.png?raw=true) ![Nibs](logo_nibs.png?raw=true)
 
 This README outlines the details of collaborating on this application.
-A short introduction of this app could easily go here.
 It's based on [Nibs](http://heroku.github.io/nibs/) and it was modified to communicate with iBeacon. 
 
 This project is an example of what you can do with your iBeacon: geolocate your users in an enclosed space and send them messages automatically.
@@ -18,8 +17,9 @@ This application manages two iBeacons: one send a notification "Welcome to your 
 You will need the following things properly installed on your computer.
 
 * [Git](http://git-scm.com/)
-* [Node.js](http://nodejs.org/) (with NPM)
-* [Python](https://www.python.org/) 
+* [Node.js](http://nodejs.org/) (with NPM) 0.10.x
+* [PostgreSQL](http://www.postgresql.org/)
+* [Python](https://www.python.org/) 2.7.x
 
 ## Installation
 
