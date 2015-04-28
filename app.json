@@ -1,5 +1,5 @@
 {
-    "name": "Nibs &amp; iBeacon",
+    "name": "Nibs & iBeacon",
     "description": "Customer loyalty application with iBeacon",
     "addons": ["heroku-postgresql:hobby-dev"]
 }
